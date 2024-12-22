@@ -645,10 +645,10 @@ export default {
 				}
 
 				if (协议类型 == 'Trojan'){
-					const TrojanLink = `${"Trojan".toLocaleLowerCase()}://${uuid}@${address}:${port}?security=tls&${"SNI".toLocaleLowerCase()}=${sni}&alpn=http%2F1.1&fp=randomized&type=${type}&host=${伪装域名}&path=${encodeURIComponent(最终路径)}#${encodeURIComponent(addressid + 节点备注)}`;
+					const TrojanLink = `${"Trojan".toLocaleLowerCase()}://${uuid}@${address}:${port}?security=tls&${"SNI".toLocaleLowerCase()}=${sni}&alpn=http%2F2&fp=randomized&type=${type}&host=${伪装域名}&path=${encodeURIComponent(最终路径)}#${encodeURIComponent(addressid + 节点备注)}`;
 					return TrojanLink;
 				} else {
-					const VlessLink = `\u0076\u006c\u0065\u0073\u0073\u003a\u002f\u002f${uuid}@${address}:${port}\u003f\u0065\u006e\u0063\u0072\u0079\u0070\u0074\u0069\u006f\u006e\u003dnone&security=tls&${"SNI".toLocaleLowerCase()}=${sni}&alpn=http%2F1.1&fp=random&type=${type}&host=${伪装域名}&path=${encodeURIComponent(最终路径)}#${encodeURIComponent(addressid + 节点备注)}`;
+					const VlessLink = `\u0076\u006c\u0065\u0073\u0073\u003a\u002f\u002f${uuid}@${address}:${port}\u003f\u0065\u006e\u0063\u0072\u0079\u0070\u0074\u0069\u006f\u006e\u003dnone&security=tls&${"SNI".toLocaleLowerCase()}=${sni}&alpn=http%2F2&fp=random&type=${type}&host=${伪装域名}&path=${encodeURIComponent(最终路径)}#${encodeURIComponent(addressid + 节点备注)}`;
 					return VlessLink;
 				}
 
